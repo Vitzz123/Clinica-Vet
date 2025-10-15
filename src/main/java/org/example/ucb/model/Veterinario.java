@@ -6,16 +6,15 @@ public class Veterinario {
     private String crmv;
     private String nome;
     private int idade;
-    private Date dataGraduacao;
-    private Consulta consulta;
+    private Date dataGraduaca;
+}
 
 
-    public Veterinario(String crmv, String nome, int idade,  Date dataGraduacao, Consulta consulta) {
+    public Veterinario(String crmv, String nome, int idade,  Date dataGraduacao) {
         this.crmv = crmv;
         this.nome = nome;
         this.idade = idade;
         this.dataGraduacao = dataGraduacao;
-        this.consulta = consulta;
     }
 
     public String getCrmv() {
@@ -41,11 +40,5 @@ public class Veterinario {
     }
     public void setDataGraduacao(Date dataGraduacao) {
         this.dataGraduacao = dataGraduacao;
-    }
-    public Consulta getConsulta() {
-        return consulta;
-    }
-    public void setConsulta(Consulta consulta) {
-        this.consulta = consulta;
     }
 }
